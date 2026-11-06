@@ -1,0 +1,5 @@
+{
+    "editor.defaultFormatter": "keyhr.42-c-format",
+    "editor.defaultFoldingRangeProvider": "keyhr.42-c-format",
+    "notebook.defaultFormatter": "keyhr.42-c-format"
+}
