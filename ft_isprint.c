@@ -1,26 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: colauren <colauren@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/11/02 13:18:57 by colauren          #+#    #+#             */
-/*   Updated: 2026/11/02 13:18:57 by colauren         ###   ########.fr       */
+/*   Created: 2026/11/02 13:17:47 by colauren          #+#    #+#             */
+/*   Updated: 2026/11/03 19:43:07 by colauren         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void    *ft_memset(void *a, int c, size_t n)
+int    ft_isprint(int c)
 {
-    unsigned char    *ptr;
-    size_t            i;
-
-    ptr = (unsigned char *)a;
-    i = 0;
-    while (i < n)
-    {
-        ptr[i] = (unsigned char)c;
-        i++;
-    }
-    return (a);
+    if (c >= 32 && c <= 126)
+        return (1);
+    else
+        return (0);
 }
